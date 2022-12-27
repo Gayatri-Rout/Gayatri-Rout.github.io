@@ -1,3 +1,33 @@
+*{
+    margin: 0;
+}
+/*Top Navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar .nav-links a {
+    transition: color .2s ease;
+    text-decoration:none ;
+    color: white;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: grey;
+    cursor: pointer;
+  }
+
 /*animated circles*/
 .animatedArea {
     width: 100%;
@@ -118,6 +148,7 @@
 
 }
 
+/*animated gradient background*/
 body {
     background: linear-gradient(-45deg, #e73c7e, #283e51, black);
     background-size: 400% 400%;
@@ -125,7 +156,6 @@ body {
     height: 100vh;
 }
 
-/*animated gradient background*/
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
