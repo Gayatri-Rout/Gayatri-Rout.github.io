@@ -7,9 +7,6 @@
 
 /*Top Navbar*/
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     color: white;
     padding-top: 2rem !important;
 }
@@ -19,6 +16,7 @@
     text-decoration: none;
     color: white;
     font-family: 'Caveat', cursive;
+    /* background-color: #e73c7e; */
 }
 
 .nav-logo:hover {
@@ -28,9 +26,9 @@
 .navbar .nav-links {
     list-style-type: none;
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
+    gap: 1.5rem !important;
+    /* background-color: brown; */
+
 }
 
 .navbar .nav-links a {
@@ -39,6 +37,7 @@
     color: white;
     font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
+    
 }
 
 .navbar .nav-links a:hover {
@@ -57,36 +56,47 @@
     bottom: 0;
     right: 0;
     width: 0;
-    height: 1px;
+    height: 0.5px;
     background-color: white;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
     .underline:hover::before {
         left: 0;
         right: auto;
         width: 100%;
     }
 }
-/*Landing Section*/
-.landing-content{
-    padding: 5rem;
+
+/*Hamburger Customization*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
-.landing-content h1{
+
+/*Landing Section*/
+/* .landing-content{
+    padding: 5rem;
+} */
+.landing-content h1 {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     padding-top: 5rem;
 }
-.landing-content p{
+
+.landing-content p {
     color: white;
     text-align: center;
     display: flex;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
+
 /*animated circles*/
 .animatedArea {
     width: 100%;
@@ -210,10 +220,23 @@
 
 /*animated gradient background*/
 body {
-    background: linear-gradient(-45deg, #e73c7e, #283e51, black);
+    background: linear-gradient(-45deg, #e73c7e, #042541, black);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    /*Removes white space at bottom in moobile view*/
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
