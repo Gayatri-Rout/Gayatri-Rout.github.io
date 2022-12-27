@@ -1,32 +1,74 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
     margin: 0;
 }
+
 /*Top Navbar*/
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 2rem;
-  }
-  
-  .navbar .nav-links {
+    padding-top: 2rem !important;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+.nav-logo:hover {
+    color: white;
+}
+
+.navbar .nav-links {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 40px;
-  }
-  
-  .navbar .nav-links a {
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.navbar .nav-links a {
     transition: color .2s ease;
-    text-decoration:none ;
+    text-decoration: none;
     color: white;
-  }
-  
-  .navbar .nav-links a:hover {
-    color: grey;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar .nav-links a:hover {
+    color: white;
     cursor: pointer;
-  }
+}
+
+/*Underline effect for the nav links*/
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
 
 /*animated circles*/
 .animatedArea {
@@ -41,6 +83,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .circles li {
