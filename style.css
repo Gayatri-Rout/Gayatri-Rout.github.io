@@ -203,6 +203,9 @@
     .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-35deg);
     }
+    .landing-content h1{
+        font-size: 3rem !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -269,7 +272,7 @@
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     font-family: 'Righteous', cursive;
 }
