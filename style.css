@@ -112,6 +112,7 @@
     .navbar-container {
         display: block;
         position: relative;
+        height: 64px;
 
     }
 
