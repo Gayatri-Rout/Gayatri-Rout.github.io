@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     margin: 0;
+}
+
+/*Text select colour*/
+::selection {
+    color: white;
+    background-color: gold
 }
 
 /*Top Navbar*/
@@ -53,9 +59,6 @@
     position: fixed;
     width: 100%;
     color: white;
-    opacity: 0.85;
-    height: 50px;
-    z-index: 12;
     padding-top: 2rem !important;
 }
 
@@ -81,9 +84,8 @@
 .menu-items a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
     transition: color 0.3s ease-in-out;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 .menu-items a:hover {
@@ -94,7 +96,7 @@
 .logo {
     order: 1;
     font-size: 1.5rem;
-    font-family: 'Caveat', cursive;
+    font-family: 'Righteous', cursive;
 }
 
 @media (max-width: 768px) {
@@ -110,7 +112,6 @@
     .navbar-container {
         display: block;
         position: relative;
-        height: 64px;
 
     }
 
@@ -169,8 +170,8 @@
         display: flex;
         flex-direction: column;
         margin-left: -40px;
-        padding-left: 50px;
         transition: transform 0.5s ease-in-out;
+
     }
 
     .navbar .menu-items li {
@@ -214,6 +215,11 @@
         margin-bottom: 2.5rem;
         font-weight: 500;
     }
+
+    .landing-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 /*Underline effect for the nav links*/
@@ -227,7 +233,7 @@
     bottom: 0;
     right: 0;
     width: 0;
-    height: 0.5px;
+    height: 1px;
     background-color: white;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -252,20 +258,25 @@
 /* .landing-content{
     padding: 5rem;
 } */
+.landing-content {
+    height: 400px;
+    /* background-color: gold;  */
+    align-items: center;
+}
+
 .landing-content h1 {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 3rem;
     text-align: center;
-    padding-top: 5rem;
+    font-family: 'Righteous', cursive;
 }
 
 .landing-content p {
     color: white;
-    text-align: center;
-    display: flex;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    text-align: center !important;
+    font-family: 'Lora', serif;
 }
 
 /*animated circles*/
@@ -391,7 +402,7 @@
 
 /*animated gradient background*/
 body {
-    background: linear-gradient(-45deg, #e73c7e, #042541, black);
+    background: linear-gradient(-45deg, #e73c7e, #011a2f, black);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     width: 100%;
