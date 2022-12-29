@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+}
+
+.aboutContainer {
+    min-height: 400px;
+    align-items: center;
+}
+
+.aboutImg {
+    text-align: right;
+}
+
+.aboutImg img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .aboutText {
+        text-align: center;
+    }
+
+    .aboutImg img {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .aboutImg {
+        text-align: center;
+    }
+}
+
+.aboutText {
+    color: white;
+    height: 65%;
+}
+
+.aboutText h1 {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+
+.aboutText a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.823);
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.823);
+    padding: 10px;
+    width: 200px;
+}
+
+.aboutText a:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.cvLink {
+    padding-top: 0.5rem;
+}
+.resume{
+    margin-right: 0.5rem;
+}
+.btn-social {
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    padding:0.5rem !important;
+    padding-left: 0.65rem !important;
+    padding-right: 0.65rem !important;
+}
+
+.btn-social .fa,
+.btn-social i {
+    backface-visibility: hidden;
+
+    transform: scale(1);
+    transition: all .25s;
+
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-social:hover .fa,
+.btn-social:focus .fa,
+.btn-social:hover i,
+.btn-social:focus i {
+
+    transform: scale(1.3);
+
+}
