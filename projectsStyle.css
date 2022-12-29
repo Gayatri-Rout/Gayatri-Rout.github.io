@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+}
+
+.projectCards{
+    min-height: 500px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+    .projectCards {
+        gap: 0.5rem;
+    }
+} 
+.card{
+    align-items: center !important;
+}
+.gitLink {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.823);
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.823);
+    padding: 10px;
+    width: 200px;
+}
+
+.gitLink:hover {
+    color: black;
+    border: 2px solid black;
+}
