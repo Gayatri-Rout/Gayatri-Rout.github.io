@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.contactForm{
+    color: white !important;
+    padding-top: 4rem;
+    font-family: 'Lora', serif;
+}
+
+.contactForm h2{
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+.contactForm label{
+    padding-top: 0.5rem;
+    font-family: 'Righteous', cursive;
+}
+.contactBtn{
+    width: 100px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.823);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.contactBtn:hover{
+    border: 2px solid white;
+    color: white;
+}

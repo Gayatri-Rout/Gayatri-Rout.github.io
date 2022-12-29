@@ -7,7 +7,7 @@
 
 .projectCards{
     min-height: 500px;
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 @media (max-width: 768px) {
@@ -17,6 +17,7 @@
 } 
 .card{
     align-items: center !important;
+    z-index: -1;
 }
 .gitLink {
     text-transform: uppercase;
@@ -28,9 +29,50 @@
     border: 2px solid rgba(0, 0, 0, 0.823);
     padding: 10px;
     width: 200px;
+    cursor: pointer;
 }
 
 .gitLink:hover {
     color: black;
     border: 2px solid black;
 }
+
+/*animated circles*/
+.circles li:nth-child(11) {
+    left: 65%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(12) {
+    left: 72%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 10s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(13) {
+    left: 52%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 14s;
+}
+
+.circles li:nth-child(14) {
+    left: 68%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(15) {
+    left: 77%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 15s;
+}
+
