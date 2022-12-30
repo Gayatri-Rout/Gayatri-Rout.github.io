@@ -30,3 +30,12 @@
     border: 2px solid white;
     color: white;
 }
+
+.contactForm input, .contactForm textarea{
+    background-color: transparent;
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover{
+    background-color: transparent;
+}

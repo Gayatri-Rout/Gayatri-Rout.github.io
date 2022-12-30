@@ -62,18 +62,24 @@
     border: 2px solid white;
 }
 
+.aboutText p {
+    font-family: 'Lora', serif;
+}
+
 .cvLink {
     padding-top: 0.5rem;
 }
-.resume{
+
+.resume {
     margin-right: 0.5rem;
 }
+
 .btn-social {
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
     transition: .3s;
-    padding:0.5rem !important;
+    padding: 0.5rem !important;
     padding-left: 0.65rem !important;
     padding-right: 0.65rem !important;
 }

@@ -5,19 +5,28 @@
     margin: 0;
 }
 
-.projectCards{
+.projectCards {
     min-height: 500px;
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
+
 @media (max-width: 768px) {
     .projectCards {
         gap: 0.5rem;
     }
-} 
-.card{
+}
+
+.card {
     align-items: center !important;
-    z-index: -1;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+}
+.card-text{
+    font-family: 'Lora', serif;
 }
 .gitLink {
     text-transform: uppercase;
@@ -76,3 +85,34 @@
     animation-delay: 15s;
 }
 
+/*Crossfade animation*/
+.crossFade {
+    height: 18rem;
+    animation: fadeBackground 4s infinite ease-in;
+    animation-fill-mode: forwards;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeBackground {
+    0% {
+        background-image: url(./images/annihilation\ ss.png);
+    }
+
+    25% {
+        filter: brightness(0.5);
+    }
+
+    50% {
+        filter: brightness(0);
+    }
+
+    75% {
+        filter: brightness(0.5);
+        background-image: url(./images/annihilation\ ss\ 2.png);
+    }
+
+    100% {
+        background-image: url(./images/annihilation\ ss\ 2.png);
+    }
+}
