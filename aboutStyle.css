@@ -14,10 +14,12 @@
     text-align: right;
 }
 
-.aboutImg img {
+.aboutImg img{
+    background: url(./images/G3.JPG);
     height: 300px;
     width: 300px;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
